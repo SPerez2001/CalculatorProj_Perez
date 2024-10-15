@@ -46,6 +46,10 @@
             rbtneq = new RoundedButton();
             rbtndot = new RoundedButton();
             rbtn0 = new RoundedButton();
+            textBox1 = new TextBox();
+            label1 = new Label();
+            rbtnhis = new RoundedButton();
+            label2 = new Label();
             SuspendLayout();
             // 
             // rbtn1
@@ -56,13 +60,14 @@
             rbtn1.BorderSize = 0;
             rbtn1.FlatAppearance.BorderSize = 0;
             rbtn1.FlatStyle = FlatStyle.Flat;
-            rbtn1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtn1.Location = new Point(40, 353);
+            rbtn1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtn1.Location = new Point(23, 315);
             rbtn1.Name = "rbtn1";
             rbtn1.Size = new Size(67, 51);
             rbtn1.TabIndex = 0;
             rbtn1.Text = "1";
             rbtn1.UseVisualStyleBackColor = false;
+            rbtn1.Click += rbtn1_Click;
             // 
             // rbtn2
             // 
@@ -72,13 +77,14 @@
             rbtn2.BorderSize = 0;
             rbtn2.FlatAppearance.BorderSize = 0;
             rbtn2.FlatStyle = FlatStyle.Flat;
-            rbtn2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtn2.Location = new Point(113, 353);
+            rbtn2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtn2.Location = new Point(96, 315);
             rbtn2.Name = "rbtn2";
             rbtn2.Size = new Size(67, 51);
             rbtn2.TabIndex = 1;
             rbtn2.Text = "2";
             rbtn2.UseVisualStyleBackColor = false;
+            rbtn2.Click += rbtn2_Click;
             // 
             // rbtn3
             // 
@@ -88,13 +94,14 @@
             rbtn3.BorderSize = 0;
             rbtn3.FlatAppearance.BorderSize = 0;
             rbtn3.FlatStyle = FlatStyle.Flat;
-            rbtn3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtn3.Location = new Point(186, 353);
+            rbtn3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtn3.Location = new Point(169, 315);
             rbtn3.Name = "rbtn3";
             rbtn3.Size = new Size(67, 51);
             rbtn3.TabIndex = 2;
             rbtn3.Text = "3";
             rbtn3.UseVisualStyleBackColor = false;
+            rbtn3.Click += rbtn3_Click;
             // 
             // rbtn6
             // 
@@ -104,13 +111,14 @@
             rbtn6.BorderSize = 0;
             rbtn6.FlatAppearance.BorderSize = 0;
             rbtn6.FlatStyle = FlatStyle.Flat;
-            rbtn6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtn6.Location = new Point(186, 296);
+            rbtn6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtn6.Location = new Point(169, 258);
             rbtn6.Name = "rbtn6";
             rbtn6.Size = new Size(67, 51);
             rbtn6.TabIndex = 5;
             rbtn6.Text = "6";
             rbtn6.UseVisualStyleBackColor = false;
+            rbtn6.Click += rbtn6_Click;
             // 
             // rbtn5
             // 
@@ -120,13 +128,14 @@
             rbtn5.BorderSize = 0;
             rbtn5.FlatAppearance.BorderSize = 0;
             rbtn5.FlatStyle = FlatStyle.Flat;
-            rbtn5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtn5.Location = new Point(113, 296);
+            rbtn5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtn5.Location = new Point(96, 258);
             rbtn5.Name = "rbtn5";
             rbtn5.Size = new Size(67, 51);
             rbtn5.TabIndex = 5;
             rbtn5.Text = "5";
             rbtn5.UseVisualStyleBackColor = false;
+            rbtn5.Click += rbtn5_Click;
             // 
             // rbtn4
             // 
@@ -136,13 +145,14 @@
             rbtn4.BorderSize = 0;
             rbtn4.FlatAppearance.BorderSize = 0;
             rbtn4.FlatStyle = FlatStyle.Flat;
-            rbtn4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtn4.Location = new Point(40, 296);
+            rbtn4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtn4.Location = new Point(23, 258);
             rbtn4.Name = "rbtn4";
             rbtn4.Size = new Size(67, 51);
             rbtn4.TabIndex = 3;
             rbtn4.Text = "4";
             rbtn4.UseVisualStyleBackColor = false;
+            rbtn4.Click += rbtn4_Click;
             // 
             // rbtn9
             // 
@@ -152,13 +162,14 @@
             rbtn9.BorderSize = 0;
             rbtn9.FlatAppearance.BorderSize = 0;
             rbtn9.FlatStyle = FlatStyle.Flat;
-            rbtn9.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtn9.Location = new Point(186, 239);
+            rbtn9.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtn9.Location = new Point(169, 201);
             rbtn9.Name = "rbtn9";
             rbtn9.Size = new Size(67, 51);
             rbtn9.TabIndex = 8;
             rbtn9.Text = "9";
             rbtn9.UseVisualStyleBackColor = false;
+            rbtn9.Click += rbtn9_Click;
             // 
             // rbtn8
             // 
@@ -168,13 +179,14 @@
             rbtn8.BorderSize = 0;
             rbtn8.FlatAppearance.BorderSize = 0;
             rbtn8.FlatStyle = FlatStyle.Flat;
-            rbtn8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtn8.Location = new Point(113, 239);
+            rbtn8.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtn8.Location = new Point(96, 201);
             rbtn8.Name = "rbtn8";
             rbtn8.Size = new Size(67, 51);
             rbtn8.TabIndex = 7;
             rbtn8.Text = "8";
             rbtn8.UseVisualStyleBackColor = false;
+            rbtn8.Click += rbtn8_Click;
             // 
             // rbtn7
             // 
@@ -184,13 +196,14 @@
             rbtn7.BorderSize = 0;
             rbtn7.FlatAppearance.BorderSize = 0;
             rbtn7.FlatStyle = FlatStyle.Flat;
-            rbtn7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtn7.Location = new Point(40, 239);
+            rbtn7.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtn7.Location = new Point(23, 201);
             rbtn7.Name = "rbtn7";
             rbtn7.Size = new Size(67, 51);
             rbtn7.TabIndex = 6;
             rbtn7.Text = "7";
             rbtn7.UseVisualStyleBackColor = false;
+            rbtn7.Click += rbtn7_Click;
             // 
             // rbtnclear
             // 
@@ -200,13 +213,14 @@
             rbtnclear.BorderSize = 0;
             rbtnclear.FlatAppearance.BorderSize = 0;
             rbtnclear.FlatStyle = FlatStyle.Flat;
-            rbtnclear.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtnclear.Location = new Point(40, 182);
+            rbtnclear.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtnclear.Location = new Point(96, 144);
             rbtnclear.Name = "rbtnclear";
-            rbtnclear.Size = new Size(140, 51);
+            rbtnclear.Size = new Size(67, 51);
             rbtnclear.TabIndex = 9;
             rbtnclear.Text = "C";
             rbtnclear.UseVisualStyleBackColor = false;
+            rbtnclear.Click += rbtnclear_Click;
             // 
             // rbtnex
             // 
@@ -216,13 +230,14 @@
             rbtnex.BorderSize = 0;
             rbtnex.FlatAppearance.BorderSize = 0;
             rbtnex.FlatStyle = FlatStyle.Flat;
-            rbtnex.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtnex.Location = new Point(186, 182);
+            rbtnex.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtnex.Location = new Point(169, 144);
             rbtnex.Name = "rbtnex";
             rbtnex.Size = new Size(67, 51);
             rbtnex.TabIndex = 10;
             rbtnex.Text = "X";
             rbtnex.UseVisualStyleBackColor = false;
+            rbtnex.Click += rbtnex_Click;
             // 
             // rbtndiv
             // 
@@ -232,8 +247,8 @@
             rbtndiv.BorderSize = 0;
             rbtndiv.FlatAppearance.BorderSize = 0;
             rbtndiv.FlatStyle = FlatStyle.Flat;
-            rbtndiv.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtndiv.Location = new Point(259, 182);
+            rbtndiv.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtndiv.Location = new Point(242, 144);
             rbtndiv.Name = "rbtndiv";
             rbtndiv.Size = new Size(67, 51);
             rbtndiv.TabIndex = 14;
@@ -248,8 +263,8 @@
             rbtnmul.BorderSize = 0;
             rbtnmul.FlatAppearance.BorderSize = 0;
             rbtnmul.FlatStyle = FlatStyle.Flat;
-            rbtnmul.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtnmul.Location = new Point(259, 239);
+            rbtnmul.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtnmul.Location = new Point(242, 201);
             rbtnmul.Name = "rbtnmul";
             rbtnmul.Size = new Size(67, 51);
             rbtnmul.TabIndex = 13;
@@ -264,13 +279,14 @@
             rbtnmin.BorderSize = 0;
             rbtnmin.FlatAppearance.BorderSize = 0;
             rbtnmin.FlatStyle = FlatStyle.Flat;
-            rbtnmin.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtnmin.Location = new Point(259, 296);
+            rbtnmin.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtnmin.Location = new Point(242, 258);
             rbtnmin.Name = "rbtnmin";
             rbtnmin.Size = new Size(67, 51);
             rbtnmin.TabIndex = 12;
             rbtnmin.Text = "-";
             rbtnmin.UseVisualStyleBackColor = false;
+            rbtnmin.Click += rbtnmin_Click;
             // 
             // rbtnplus
             // 
@@ -280,13 +296,14 @@
             rbtnplus.BorderSize = 0;
             rbtnplus.FlatAppearance.BorderSize = 0;
             rbtnplus.FlatStyle = FlatStyle.Flat;
-            rbtnplus.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtnplus.Location = new Point(259, 353);
+            rbtnplus.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtnplus.Location = new Point(242, 315);
             rbtnplus.Name = "rbtnplus";
             rbtnplus.Size = new Size(67, 51);
             rbtnplus.TabIndex = 11;
             rbtnplus.Text = "+";
             rbtnplus.UseVisualStyleBackColor = false;
+            rbtnplus.Click += rbtnplus_Click;
             // 
             // rbtneq
             // 
@@ -296,13 +313,14 @@
             rbtneq.BorderSize = 0;
             rbtneq.FlatAppearance.BorderSize = 0;
             rbtneq.FlatStyle = FlatStyle.Flat;
-            rbtneq.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtneq.Location = new Point(186, 410);
+            rbtneq.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtneq.Location = new Point(169, 372);
             rbtneq.Name = "rbtneq";
             rbtneq.Size = new Size(140, 51);
             rbtneq.TabIndex = 17;
             rbtneq.Text = "=";
             rbtneq.UseVisualStyleBackColor = false;
+            rbtneq.Click += rbtneq_Click;
             // 
             // rbtndot
             // 
@@ -312,13 +330,14 @@
             rbtndot.BorderSize = 0;
             rbtndot.FlatAppearance.BorderSize = 0;
             rbtndot.FlatStyle = FlatStyle.Flat;
-            rbtndot.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtndot.Location = new Point(113, 410);
+            rbtndot.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtndot.Location = new Point(96, 372);
             rbtndot.Name = "rbtndot";
             rbtndot.Size = new Size(67, 51);
             rbtndot.TabIndex = 16;
             rbtndot.Text = ".";
             rbtndot.UseVisualStyleBackColor = false;
+            rbtndot.Click += rbtndot_Click;
             // 
             // rbtn0
             // 
@@ -328,20 +347,76 @@
             rbtn0.BorderSize = 0;
             rbtn0.FlatAppearance.BorderSize = 0;
             rbtn0.FlatStyle = FlatStyle.Flat;
-            rbtn0.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            rbtn0.Location = new Point(40, 410);
+            rbtn0.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtn0.Location = new Point(23, 372);
             rbtn0.Name = "rbtn0";
             rbtn0.Size = new Size(67, 51);
             rbtn0.TabIndex = 15;
             rbtn0.Text = "0";
             rbtn0.UseVisualStyleBackColor = false;
+            rbtn0.Click += rbtn0_Click;
+            // 
+            // textBox1
+            // 
+            textBox1.BorderStyle = BorderStyle.None;
+            textBox1.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox1.Location = new Point(23, 81);
+            textBox1.Multiline = true;
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(286, 57);
+            textBox1.TabIndex = 18;
+            textBox1.TextAlign = HorizontalAlignment.Right;
+            textBox1.TextChanged += textBox1_TextChanged;
+            textBox1.KeyPress += textBox1_KeyPress;
+            // 
+            // label1
+            // 
+            label1.BackColor = SystemColors.ControlLightLight;
+            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Location = new Point(23, 32);
+            label1.Name = "label1";
+            label1.Size = new Size(286, 49);
+            label1.TabIndex = 19;
+            label1.TextAlign = ContentAlignment.BottomRight;
+            // 
+            // rbtnhis
+            // 
+            rbtnhis.BackColor = SystemColors.ControlLightLight;
+            rbtnhis.BorderColor = Color.PaleVioletRed;
+            rbtnhis.BorderRadius = 20;
+            rbtnhis.BorderSize = 0;
+            rbtnhis.FlatAppearance.BorderSize = 0;
+            rbtnhis.FlatStyle = FlatStyle.Flat;
+            rbtnhis.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
+            rbtnhis.Location = new Point(23, 144);
+            rbtnhis.Name = "rbtnhis";
+            rbtnhis.Size = new Size(67, 51);
+            rbtnhis.TabIndex = 21;
+            rbtnhis.Text = "H";
+            rbtnhis.UseVisualStyleBackColor = false;
+            rbtnhis.Click += rbtnhis_Click;
+            // 
+            // label2
+            // 
+            label2.BackColor = SystemColors.ControlLightLight;
+            label2.BorderStyle = BorderStyle.FixedSingle;
+            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(-5, 201);
+            label2.Name = "label2";
+            label2.Size = new Size(346, 258);
+            label2.TabIndex = 22;
+            label2.Text = "There's no history yet";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(366, 473);
+            ClientSize = new Size(336, 455);
+            Controls.Add(label2);
+            Controls.Add(rbtnhis);
+            Controls.Add(label1);
+            Controls.Add(textBox1);
             Controls.Add(rbtneq);
             Controls.Add(rbtndot);
             Controls.Add(rbtn0);
@@ -364,7 +439,9 @@
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += Form1_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -387,5 +464,9 @@
         private RoundedButton rbtneq;
         private RoundedButton rbtndot;
         private RoundedButton rbtn0;
+        private TextBox textBox1;
+        private Label label1;
+        private RoundedButton rbtnhis;
+        private Label label2;
     }
 }
