@@ -218,7 +218,7 @@
             rbtnclear.Name = "rbtnclear";
             rbtnclear.Size = new Size(67, 51);
             rbtnclear.TabIndex = 9;
-            rbtnclear.Text = "C";
+            rbtnclear.Text = "CE";
             rbtnclear.UseVisualStyleBackColor = false;
             rbtnclear.Click += rbtnclear_Click;
             // 
@@ -235,7 +235,7 @@
             rbtnex.Name = "rbtnex";
             rbtnex.Size = new Size(67, 51);
             rbtnex.TabIndex = 10;
-            rbtnex.Text = "X";
+            rbtnex.Text = "C";
             rbtnex.UseVisualStyleBackColor = false;
             rbtnex.Click += rbtnex_Click;
             // 
@@ -254,6 +254,7 @@
             rbtndiv.TabIndex = 14;
             rbtndiv.Text = "/";
             rbtndiv.UseVisualStyleBackColor = false;
+            rbtndiv.Click += rbtndiv_Click;
             // 
             // rbtnmul
             // 
@@ -270,6 +271,7 @@
             rbtnmul.TabIndex = 13;
             rbtnmul.Text = "*";
             rbtnmul.UseVisualStyleBackColor = false;
+            rbtnmul.Click += rbtnmul_Click;
             // 
             // rbtnmin
             // 
@@ -400,12 +402,13 @@
             // 
             label2.BackColor = SystemColors.ControlLightLight;
             label2.BorderStyle = BorderStyle.FixedSingle;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(-5, 201);
+            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(23, 201);
             label2.Name = "label2";
-            label2.Size = new Size(346, 258);
+            label2.Size = new Size(286, 258);
             label2.TabIndex = 22;
             label2.Text = "There's no history yet";
+            label2.TextAlign = ContentAlignment.TopCenter;
             // 
             // Form1
             // 

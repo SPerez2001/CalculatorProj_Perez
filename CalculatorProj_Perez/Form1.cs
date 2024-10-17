@@ -6,6 +6,7 @@ namespace CalculatorProj_Perez
     {
         public string word = "";
         public string word1 = "";
+        public string check = "";
         public Form1()
         {
             InitializeComponent();
@@ -31,42 +32,43 @@ namespace CalculatorProj_Perez
 
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            string value = label1.Text;
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true; // Reject the input
-            }
-            else
-            {
+            e.Handled = true;
+            //string value = label1.Text;
+            //if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            //{
+            //    e.Handled = true; // Reject the input
+            //}
+            //else
+            //{
 
-                if (word == "")
-                {
-                    for (int i = 0; i < 1; i++)
-                    {
-                        textBox1.Text = "";
-                        word = "ok";
-                    }
-                }
-                else
-                {
-                    if (!string.IsNullOrEmpty(value) && char.IsDigit(value[value.Length - 1]))
-                    {
+            //    if (word == "")
+            //    {
+            //        for (int i = 0; i < 1; i++)
+            //        {
+            //            textBox1.Text = "";
+            //            word = "ok";
+            //        }
+            //    }
+            //    else
+            //    {
+            //        if (!string.IsNullOrEmpty(value) && char.IsDigit(value[value.Length - 1]))
+            //        {
 
-                    }
-                    else
-                    {
-                        if (word1 == "")
-                        {
-                            for (int i = 0; i < 1; i++)
-                            {
-                                textBox1.Text = "";
-                                word1 = "ok";
-                            }
-                        }
-                    }
-                }
+            //        }
+            //        else
+            //        {
+            //            if (word1 == "")
+            //            {
+            //                for (int i = 0; i < 1; i++)
+            //                {
+            //                    textBox1.Text = "";
+            //                    word1 = "ok";
+            //                }
+            //            }
+            //        }
+            //    }
 
-            }
+            //}
 
         }
 
@@ -412,35 +414,33 @@ namespace CalculatorProj_Perez
         {
             string value = textBox1.Text;
             string value1 = label1.Text;
-            if (value[value.Length - 1] == '0')
+            if (value[0] != '0' || value.Contains("."))
             {
-                if (word != "")
+                if (word == "")
                 {
+                    word = "ok";
+                    value = "0";
+                    textBox1.Text = value;
+                }
+                else
+                {
+                    word = "ok";
                     value += "0";
                     textBox1.Text = value;
                 }
 
             }
-            else
-            {
-                if (word != "")
-                {
-                    value += "0";
-                    textBox1.Text = value;
-                }
-            }
+
         }
 
         private void rbtndot_Click(object sender, EventArgs e)
         {
             string value = textBox1.Text;
-            if (value != "")
+            if (value != "" && !value.Contains("."))
             {
-                if (!value.Contains("."))
-                {
-                    value += ".";
-                    textBox1.Text = value;
-                }
+                word = "ok";
+                value += ".";
+                textBox1.Text = value;
             }
 
         }
@@ -472,6 +472,14 @@ namespace CalculatorProj_Perez
         {
             string value = label1.Text;
             string value1 = textBox1.Text;
+
+            if (check == "")
+            {
+                check = "ok";
+                label2.Text = "";
+                label2.TextAlign = ContentAlignment.TopRight;
+            }
+            string value2 = label2.Text;
             if (value != "")
             {
                 if (!char.IsDigit(value[value.Length - 1]))
@@ -480,7 +488,7 @@ namespace CalculatorProj_Perez
                     string num2 = textBox1.Text;
                     int position1 = value.IndexOf('+');
                     int position2 = value.IndexOf('-');
-                    int position3 = value.IndexOf('x');
+                    int position3 = value.IndexOf('*');
                     int position4 = value.IndexOf('/');
                     if (value[value.Length - 1] == '+')
                     {
@@ -490,21 +498,25 @@ namespace CalculatorProj_Perez
                             num1 += value[i];
                         }
 
-                        float val1 = (float)Convert.ToDouble(num1);
-                        float val2 = (float)Convert.ToDouble(num2);
-                        float result = val1 + val2;
+                        double val1 = Convert.ToDouble(num1);
+                        double val2 = Convert.ToDouble(num2);
+                        double result = val1 + val2;
                         if (value.Contains("."))
                         {
-                            string res = value + num2 + "=";
+                            string res = value + num2 + "=" + result;
                             label1.Text = res;
-                            textBox1.Text = result.ToString("0.0000");
+                            textBox1.Text = result.ToString();
+                            value2 += value + num2 + "=" + result + Environment.NewLine;
+                            label2.Text = value2;
                             word = "";
                         }
                         else
                         {
-                            string res = value + num2 + "=";
+                            string res = value + num2 + "=" + result;
                             label1.Text = res;
                             textBox1.Text = result.ToString("0");
+                            value2 += value + num2 + "=" + result + Environment.NewLine;
+                            label2.Text = value2;
                             word = "";
                         }
 
@@ -515,22 +527,25 @@ namespace CalculatorProj_Perez
                         {
                             num1 += value[i];
                         }
-                        MessageBox.Show(num1);
-                        float val1 = (float)Convert.ToDouble(num1);
-                        float val2 = (float)Convert.ToDouble(num2);
-                        float result = val1 - val2;
+                        double val1 = Convert.ToDouble(num1);
+                        double val2 = Convert.ToDouble(num2);
+                        double result = val1 - val2;
                         if (value.Contains("."))
                         {
-                            string res = value + num2 + "=";
+                            string res = value + num2 + "=" + result;
                             label1.Text = res;
-                            textBox1.Text = result.ToString("0.0000");
+                            textBox1.Text = result.ToString();
+                            value2 += value + num2 + "=" + result + Environment.NewLine;
+                            label2.Text = value2;
                             word = "";
                         }
                         else
                         {
-                            string res = value + num2 + "=";
+                            string res = value + num2 + "=" + result;
                             label1.Text = res;
                             textBox1.Text = result.ToString("0");
+                            value2 += value + num2 + "=" + result + Environment.NewLine;
+                            label2.Text = value2;
                             word = "";
                         }
                     }
@@ -540,22 +555,25 @@ namespace CalculatorProj_Perez
                         {
                             num1 += value[i];
                         }
-
-                        float val1 = (float)Convert.ToDouble(num1);
-                        float val2 = (float)Convert.ToDouble(num2);
-                        float result = val1 * val2;
+                        double val1 = Convert.ToDouble(num1);
+                        double val2 = Convert.ToDouble(num2);
+                        double result = val1 * val2;
                         if (value.Contains("."))
                         {
-                            string res = value + num2 + "=";
+                            string res = value + num2 + "=" + result;
                             label1.Text = res;
-                            textBox1.Text = result.ToString("0.0000");
+                            textBox1.Text = result.ToString();
+                            value2 += value + num2 + "=" + result + Environment.NewLine;
+                            label2.Text = value2;
                             word = "";
                         }
                         else
                         {
-                            string res = value + num2 + "=";
+                            string res = value + num2 + "=" + result;
                             label1.Text = res;
                             textBox1.Text = result.ToString("0");
+                            value2 += value + num2 + "=" + result + Environment.NewLine;
+                            label2.Text = value2;
                             word = "";
                         }
                     }
@@ -566,33 +584,34 @@ namespace CalculatorProj_Perez
                             num1 += value[i];
                         }
 
-                        float val1 = (float)Convert.ToDouble(num1);
-                        float val2 = (float)Convert.ToDouble(num2);
-                        float result = val1 / val2;
+                        double val1 = Convert.ToDouble(num1);
+                        double val2 = Convert.ToDouble(num2);
+                        double result = val1 / val2;
                         if (value.Contains("."))
                         {
-                            string res = value + num2 + "=";
+                            string res = value + num2 + "=" + result;
                             label1.Text = res;
-                            textBox1.Text = result.ToString("0.0000");
+                            textBox1.Text = result.ToString();
+                            value2 += value + num2 + "=" + result + Environment.NewLine;
+                            label2.Text = value2;
                             word = "";
                         }
                         else
                         {
-                            string res = value + num2 + "=";
+                            string res = value + num2 + "=" + result;
                             label1.Text = res;
                             textBox1.Text = result.ToString("0");
+                            value2 += value + num2 + "=" + result + Environment.NewLine;
+                            label2.Text = value2;
                             word = "";
                         }
-                    }
-                    else if (value[value.Length - 1] == '=')
-                    {
-                        label1.Text = value1;
-                        word = "";
                     }
                 }
                 else
                 {
                     label1.Text = value1;
+                    value2 += value1 + Environment.NewLine;
+                    label2.Text = value2;
                     word = "";
                 }
 
@@ -600,6 +619,8 @@ namespace CalculatorProj_Perez
             else
             {
                 label1.Text = value1;
+                value2 += value1 + Environment.NewLine;
+                label2.Text = value2;
                 word = "";
             }
         }
@@ -624,8 +645,9 @@ namespace CalculatorProj_Perez
 
         private void rbtnclear_Click(object sender, EventArgs e)
         {
+            word = "";
             label1.Text = "";
-            textBox1.Text = "";
+            textBox1.Text = "0";
 
         }
 
@@ -649,20 +671,55 @@ namespace CalculatorProj_Perez
             }
         }
 
-        
+
 
         private void rbtnhis_Click(object sender, EventArgs e)
         {
-            
+
             if (label2.Visible)
             {
                 label2.Visible = false;
             }
-            else 
+            else
             {
                 label2.Visible = true;
             }
         }
 
+        private void rbtnmul_Click(object sender, EventArgs e)
+        {
+            string value = label1.Text;
+            string value1 = textBox1.Text;
+            if (!string.IsNullOrEmpty(value) && char.IsDigit(value[value.Length - 1]))
+            {
+
+                value1 += "*";
+                label1.Text = value1;
+                word = "";
+            }
+            else if (string.IsNullOrEmpty(value))
+            {
+                label1.Text = value1 + "*";
+                word = "";
+            }
+        }
+
+        private void rbtndiv_Click(object sender, EventArgs e)
+        {
+            string value = label1.Text;
+            string value1 = textBox1.Text;
+            if (!string.IsNullOrEmpty(value) && char.IsDigit(value[value.Length - 1]))
+            {
+
+                value1 += "/";
+                label1.Text = value1;
+                word = "";
+            }
+            else if (string.IsNullOrEmpty(value))
+            {
+                label1.Text = value1 + "/";
+                word = "";
+            }
+        }
     }
 }
