@@ -349,15 +349,13 @@
             // 
             textBox1.BackColor = SystemColors.ControlLightLight;
             textBox1.BorderStyle = BorderStyle.None;
-            textBox1.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            textBox1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox1.Location = new Point(23, 90);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
-            textBox1.ReadOnly = true;
-            textBox1.Size = new Size(286, 57);
+            textBox1.Size = new Size(286, 46);
             textBox1.TabIndex = 18;
             textBox1.TextAlign = HorizontalAlignment.Right;
-            textBox1.TextChanged += textBox1_TextChanged;
             textBox1.KeyPress += textBox1_KeyPress;
             // 
             // label1
@@ -380,7 +378,6 @@
             label2.Size = new Size(286, 247);
             label2.TabIndex = 22;
             label2.Text = "There's no history yet";
-            label2.TextAlign = ContentAlignment.TopCenter;
             // 
             // lnklblhis
             // 
