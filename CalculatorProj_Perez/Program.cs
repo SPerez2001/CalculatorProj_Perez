@@ -73,19 +73,19 @@ namespace CalculatorProj_Perez
                     {
                         case '+':
                             res = val1 + val2;
-                            res = Math.Round(res, 2);
+                            res = Math.Round(res, 5);
                             result = val1 + " + " + val2 + " = " + res;
                             return result;
                             break;
                         case '-':
                             res = val1 - val2;
-                            res = Math.Round(res, 2);
+                            res = Math.Round(res, 5);
                             result = val1 + " - " + val2 + " = " + res;
                             return result;
                             break;
                         case '*':
                             res = val1 * val2;
-                            res = Math.Round(res, 2);
+                            res = Math.Round(res, 5);
                             result = val1 + " * " + val2 + " = " + res;
                             return result;
                             break;
@@ -97,7 +97,7 @@ namespace CalculatorProj_Perez
                             else
                             {
                                 res = val1 / val2;
-                                res = Math.Round(res, 2);
+                                res = Math.Round(res, 5);
                                 result = val1 + " / " + val2 + " = " + res;
                                 return result;
                             }
@@ -113,19 +113,19 @@ namespace CalculatorProj_Perez
                 {
                     case '+':
                         res = val1 + val2;
-                        res = Math.Round(res, 2);
+                        res = Math.Round(res, 5);
                         result = val1 + " + " + txtbox + " = " + res;
                         return result;
                         break;
                     case '-':
                         res = val1 - val2;
-                        res = Math.Round(res, 2);
+                        res = Math.Round(res, 5);
                         result = val1 + " - " + txtbox + " = " + res;
                         return result;
                         break;
                     case '*':
                         res = val1 * val2;
-                        res = Math.Round(res, 2);
+                        res = Math.Round(res, 5);
                         result = val1 + " * " + txtbox + " = " + res;
                         return result;
                         break;
@@ -137,7 +137,7 @@ namespace CalculatorProj_Perez
                         else
                         {
                             res = val1 / val2;
-                            res = Math.Round(res, 2);
+                            res = Math.Round(res, 5);
                             result = val1 + " / " + txtbox + " = " + res;
                             return result;
                         }
