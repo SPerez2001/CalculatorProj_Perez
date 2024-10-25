@@ -84,7 +84,7 @@ namespace CalculatorProj_Perez
                             return result;
                             break;
                         case '*':
-                            res = val1 - val2;
+                            res = val1 * val2;
                             res = Math.Round(res, 2);
                             result = val1 + " * " + val2 + " = " + res;
                             return result;

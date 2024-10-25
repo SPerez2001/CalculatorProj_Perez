@@ -130,6 +130,7 @@ namespace CalculatorProj_Perez
             {
                 word = "";
                 word1 = "";
+                textBox1.Text = "0";
             }
             else
             {
