@@ -54,14 +54,14 @@
             // 
             // rbtn1
             // 
-            rbtn1.BackColor = SystemColors.ControlLightLight;
+            rbtn1.BackColor = Color.WhiteSmoke;
             rbtn1.BorderColor = Color.PaleVioletRed;
             rbtn1.BorderRadius = 20;
             rbtn1.BorderSize = 0;
             rbtn1.FlatAppearance.BorderSize = 0;
             rbtn1.FlatStyle = FlatStyle.Flat;
             rbtn1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn1.Location = new Point(23, 324);
+            rbtn1.Location = new Point(23, 319);
             rbtn1.Name = "rbtn1";
             rbtn1.Size = new Size(67, 51);
             rbtn1.TabIndex = 0;
@@ -70,14 +70,14 @@
             // 
             // rbtn2
             // 
-            rbtn2.BackColor = SystemColors.ControlLightLight;
+            rbtn2.BackColor = Color.WhiteSmoke;
             rbtn2.BorderColor = Color.PaleVioletRed;
             rbtn2.BorderRadius = 20;
             rbtn2.BorderSize = 0;
             rbtn2.FlatAppearance.BorderSize = 0;
             rbtn2.FlatStyle = FlatStyle.Flat;
             rbtn2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn2.Location = new Point(96, 324);
+            rbtn2.Location = new Point(96, 319);
             rbtn2.Name = "rbtn2";
             rbtn2.Size = new Size(67, 51);
             rbtn2.TabIndex = 1;
@@ -86,14 +86,14 @@
             // 
             // rbtn3
             // 
-            rbtn3.BackColor = SystemColors.ControlLightLight;
+            rbtn3.BackColor = Color.WhiteSmoke;
             rbtn3.BorderColor = Color.PaleVioletRed;
             rbtn3.BorderRadius = 20;
             rbtn3.BorderSize = 0;
             rbtn3.FlatAppearance.BorderSize = 0;
             rbtn3.FlatStyle = FlatStyle.Flat;
             rbtn3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn3.Location = new Point(169, 324);
+            rbtn3.Location = new Point(169, 319);
             rbtn3.Name = "rbtn3";
             rbtn3.Size = new Size(67, 51);
             rbtn3.TabIndex = 2;
@@ -102,14 +102,14 @@
             // 
             // rbtn6
             // 
-            rbtn6.BackColor = SystemColors.ControlLightLight;
+            rbtn6.BackColor = Color.WhiteSmoke;
             rbtn6.BorderColor = Color.PaleVioletRed;
             rbtn6.BorderRadius = 20;
             rbtn6.BorderSize = 0;
             rbtn6.FlatAppearance.BorderSize = 0;
             rbtn6.FlatStyle = FlatStyle.Flat;
             rbtn6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn6.Location = new Point(169, 267);
+            rbtn6.Location = new Point(169, 262);
             rbtn6.Name = "rbtn6";
             rbtn6.Size = new Size(67, 51);
             rbtn6.TabIndex = 5;
@@ -118,14 +118,14 @@
             // 
             // rbtn5
             // 
-            rbtn5.BackColor = SystemColors.ControlLightLight;
+            rbtn5.BackColor = Color.WhiteSmoke;
             rbtn5.BorderColor = Color.PaleVioletRed;
             rbtn5.BorderRadius = 20;
             rbtn5.BorderSize = 0;
             rbtn5.FlatAppearance.BorderSize = 0;
             rbtn5.FlatStyle = FlatStyle.Flat;
             rbtn5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn5.Location = new Point(96, 267);
+            rbtn5.Location = new Point(96, 262);
             rbtn5.Name = "rbtn5";
             rbtn5.Size = new Size(67, 51);
             rbtn5.TabIndex = 5;
@@ -134,14 +134,14 @@
             // 
             // rbtn4
             // 
-            rbtn4.BackColor = SystemColors.ControlLightLight;
+            rbtn4.BackColor = Color.WhiteSmoke;
             rbtn4.BorderColor = Color.PaleVioletRed;
             rbtn4.BorderRadius = 20;
             rbtn4.BorderSize = 0;
             rbtn4.FlatAppearance.BorderSize = 0;
             rbtn4.FlatStyle = FlatStyle.Flat;
             rbtn4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn4.Location = new Point(23, 267);
+            rbtn4.Location = new Point(23, 262);
             rbtn4.Name = "rbtn4";
             rbtn4.Size = new Size(67, 51);
             rbtn4.TabIndex = 3;
@@ -150,14 +150,14 @@
             // 
             // rbtn9
             // 
-            rbtn9.BackColor = SystemColors.ControlLightLight;
+            rbtn9.BackColor = Color.WhiteSmoke;
             rbtn9.BorderColor = Color.PaleVioletRed;
             rbtn9.BorderRadius = 20;
             rbtn9.BorderSize = 0;
             rbtn9.FlatAppearance.BorderSize = 0;
             rbtn9.FlatStyle = FlatStyle.Flat;
             rbtn9.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn9.Location = new Point(169, 210);
+            rbtn9.Location = new Point(169, 205);
             rbtn9.Name = "rbtn9";
             rbtn9.Size = new Size(67, 51);
             rbtn9.TabIndex = 8;
@@ -166,14 +166,14 @@
             // 
             // rbtn8
             // 
-            rbtn8.BackColor = SystemColors.ControlLightLight;
+            rbtn8.BackColor = Color.WhiteSmoke;
             rbtn8.BorderColor = Color.PaleVioletRed;
             rbtn8.BorderRadius = 20;
             rbtn8.BorderSize = 0;
             rbtn8.FlatAppearance.BorderSize = 0;
             rbtn8.FlatStyle = FlatStyle.Flat;
             rbtn8.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn8.Location = new Point(96, 210);
+            rbtn8.Location = new Point(96, 205);
             rbtn8.Name = "rbtn8";
             rbtn8.Size = new Size(67, 51);
             rbtn8.TabIndex = 7;
@@ -182,14 +182,14 @@
             // 
             // rbtn7
             // 
-            rbtn7.BackColor = SystemColors.ControlLightLight;
+            rbtn7.BackColor = Color.WhiteSmoke;
             rbtn7.BorderColor = Color.PaleVioletRed;
             rbtn7.BorderRadius = 20;
             rbtn7.BorderSize = 0;
             rbtn7.FlatAppearance.BorderSize = 0;
             rbtn7.FlatStyle = FlatStyle.Flat;
             rbtn7.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn7.Location = new Point(23, 210);
+            rbtn7.Location = new Point(23, 205);
             rbtn7.Name = "rbtn7";
             rbtn7.Size = new Size(67, 51);
             rbtn7.TabIndex = 6;
@@ -198,14 +198,14 @@
             // 
             // rbtnclear
             // 
-            rbtnclear.BackColor = SystemColors.ControlLightLight;
+            rbtnclear.BackColor = Color.WhiteSmoke;
             rbtnclear.BorderColor = Color.PaleVioletRed;
             rbtnclear.BorderRadius = 20;
             rbtnclear.BorderSize = 0;
             rbtnclear.FlatAppearance.BorderSize = 0;
             rbtnclear.FlatStyle = FlatStyle.Flat;
             rbtnclear.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtnclear.Location = new Point(23, 153);
+            rbtnclear.Location = new Point(23, 148);
             rbtnclear.Name = "rbtnclear";
             rbtnclear.Size = new Size(140, 51);
             rbtnclear.TabIndex = 9;
@@ -215,14 +215,14 @@
             // 
             // rbtnex
             // 
-            rbtnex.BackColor = SystemColors.ControlLightLight;
+            rbtnex.BackColor = Color.WhiteSmoke;
             rbtnex.BorderColor = Color.PaleVioletRed;
             rbtnex.BorderRadius = 20;
             rbtnex.BorderSize = 0;
             rbtnex.FlatAppearance.BorderSize = 0;
             rbtnex.FlatStyle = FlatStyle.Flat;
             rbtnex.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtnex.Location = new Point(169, 153);
+            rbtnex.Location = new Point(169, 148);
             rbtnex.Name = "rbtnex";
             rbtnex.Size = new Size(67, 51);
             rbtnex.TabIndex = 10;
@@ -232,14 +232,14 @@
             // 
             // rbtndiv
             // 
-            rbtndiv.BackColor = SystemColors.ControlLightLight;
+            rbtndiv.BackColor = Color.WhiteSmoke;
             rbtndiv.BorderColor = Color.PaleVioletRed;
             rbtndiv.BorderRadius = 20;
             rbtndiv.BorderSize = 0;
             rbtndiv.FlatAppearance.BorderSize = 0;
             rbtndiv.FlatStyle = FlatStyle.Flat;
-            rbtndiv.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtndiv.Location = new Point(242, 153);
+            rbtndiv.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
+            rbtndiv.Location = new Point(242, 148);
             rbtndiv.Name = "rbtndiv";
             rbtndiv.Size = new Size(67, 51);
             rbtndiv.TabIndex = 14;
@@ -248,14 +248,14 @@
             // 
             // rbtnmul
             // 
-            rbtnmul.BackColor = SystemColors.ControlLightLight;
+            rbtnmul.BackColor = Color.WhiteSmoke;
             rbtnmul.BorderColor = Color.PaleVioletRed;
             rbtnmul.BorderRadius = 20;
             rbtnmul.BorderSize = 0;
             rbtnmul.FlatAppearance.BorderSize = 0;
             rbtnmul.FlatStyle = FlatStyle.Flat;
-            rbtnmul.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtnmul.Location = new Point(242, 210);
+            rbtnmul.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
+            rbtnmul.Location = new Point(242, 205);
             rbtnmul.Name = "rbtnmul";
             rbtnmul.Size = new Size(67, 51);
             rbtnmul.TabIndex = 13;
@@ -264,14 +264,14 @@
             // 
             // rbtnmin
             // 
-            rbtnmin.BackColor = SystemColors.ControlLightLight;
+            rbtnmin.BackColor = Color.WhiteSmoke;
             rbtnmin.BorderColor = Color.PaleVioletRed;
             rbtnmin.BorderRadius = 20;
             rbtnmin.BorderSize = 0;
             rbtnmin.FlatAppearance.BorderSize = 0;
             rbtnmin.FlatStyle = FlatStyle.Flat;
-            rbtnmin.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtnmin.Location = new Point(242, 267);
+            rbtnmin.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
+            rbtnmin.Location = new Point(242, 262);
             rbtnmin.Name = "rbtnmin";
             rbtnmin.Size = new Size(67, 51);
             rbtnmin.TabIndex = 12;
@@ -280,14 +280,14 @@
             // 
             // rbtnplus
             // 
-            rbtnplus.BackColor = SystemColors.ControlLightLight;
+            rbtnplus.BackColor = Color.WhiteSmoke;
             rbtnplus.BorderColor = Color.PaleVioletRed;
             rbtnplus.BorderRadius = 20;
             rbtnplus.BorderSize = 0;
             rbtnplus.FlatAppearance.BorderSize = 0;
             rbtnplus.FlatStyle = FlatStyle.Flat;
-            rbtnplus.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtnplus.Location = new Point(242, 324);
+            rbtnplus.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
+            rbtnplus.Location = new Point(242, 319);
             rbtnplus.Name = "rbtnplus";
             rbtnplus.Size = new Size(67, 51);
             rbtnplus.TabIndex = 11;
@@ -296,14 +296,15 @@
             // 
             // rbtneq
             // 
-            rbtneq.BackColor = Color.FromArgb(196, 12, 12);
+            rbtneq.BackColor = Color.FromArgb(2, 76, 170);
             rbtneq.BorderColor = Color.PaleVioletRed;
             rbtneq.BorderRadius = 20;
             rbtneq.BorderSize = 0;
             rbtneq.FlatAppearance.BorderSize = 0;
             rbtneq.FlatStyle = FlatStyle.Flat;
             rbtneq.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtneq.Location = new Point(169, 381);
+            rbtneq.ForeColor = SystemColors.ControlLightLight;
+            rbtneq.Location = new Point(169, 376);
             rbtneq.Name = "rbtneq";
             rbtneq.Size = new Size(140, 51);
             rbtneq.TabIndex = 17;
@@ -313,14 +314,14 @@
             // 
             // rbtndot
             // 
-            rbtndot.BackColor = SystemColors.ControlLightLight;
+            rbtndot.BackColor = Color.WhiteSmoke;
             rbtndot.BorderColor = Color.PaleVioletRed;
             rbtndot.BorderRadius = 20;
             rbtndot.BorderSize = 0;
             rbtndot.FlatAppearance.BorderSize = 0;
             rbtndot.FlatStyle = FlatStyle.Flat;
             rbtndot.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtndot.Location = new Point(96, 381);
+            rbtndot.Location = new Point(96, 376);
             rbtndot.Name = "rbtndot";
             rbtndot.Size = new Size(67, 51);
             rbtndot.TabIndex = 16;
@@ -330,14 +331,14 @@
             // 
             // rbtn0
             // 
-            rbtn0.BackColor = SystemColors.ControlLightLight;
+            rbtn0.BackColor = Color.WhiteSmoke;
             rbtn0.BorderColor = Color.PaleVioletRed;
             rbtn0.BorderRadius = 20;
             rbtn0.BorderSize = 0;
             rbtn0.FlatAppearance.BorderSize = 0;
             rbtn0.FlatStyle = FlatStyle.Flat;
             rbtn0.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn0.Location = new Point(23, 381);
+            rbtn0.Location = new Point(23, 376);
             rbtn0.Name = "rbtn0";
             rbtn0.Size = new Size(67, 51);
             rbtn0.TabIndex = 15;
@@ -347,7 +348,7 @@
             // 
             // textBox1
             // 
-            textBox1.BackColor = SystemColors.ControlLightLight;
+            textBox1.BackColor = Color.WhiteSmoke;
             textBox1.BorderStyle = BorderStyle.None;
             textBox1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox1.Location = new Point(23, 90);
@@ -360,7 +361,7 @@
             // 
             // label1
             // 
-            label1.BackColor = SystemColors.ControlLightLight;
+            label1.BackColor = Color.WhiteSmoke;
             label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(23, 41);
             label1.Name = "label1";
@@ -370,21 +371,23 @@
             // 
             // label2
             // 
-            label2.BackColor = SystemColors.ControlLightLight;
-            label2.BorderStyle = BorderStyle.FixedSingle;
+            label2.BackColor = Color.WhiteSmoke;
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(23, 210);
+            label2.Location = new Point(23, 205);
             label2.Name = "label2";
-            label2.Size = new Size(286, 247);
+            label2.Size = new Size(286, 244);
             label2.TabIndex = 22;
             label2.Text = "There's no history yet";
             // 
             // lnklblhis
             // 
+            lnklblhis.ActiveLinkColor = Color.FromArgb(2, 76, 170);
             lnklblhis.AutoSize = true;
             lnklblhis.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lnklblhis.ForeColor = Color.FromArgb(196, 12, 12);
+            lnklblhis.ImageKey = "(none)";
             lnklblhis.LinkBehavior = LinkBehavior.NeverUnderline;
-            lnklblhis.LinkColor = Color.FromArgb(192, 0, 0);
+            lnklblhis.LinkColor = Color.Black;
             lnklblhis.Location = new Point(253, 9);
             lnklblhis.Name = "lnklblhis";
             lnklblhis.Size = new Size(66, 21);
@@ -398,7 +401,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-            ClientSize = new Size(336, 455);
+            ClientSize = new Size(336, 441);
             Controls.Add(lnklblhis);
             Controls.Add(label2);
             Controls.Add(label1);

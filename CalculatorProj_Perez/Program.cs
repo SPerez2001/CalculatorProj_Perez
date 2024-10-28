@@ -1,3 +1,5 @@
+using System.Drawing;
+
 namespace CalculatorProj_Perez
 {
     internal static class Program
@@ -19,13 +21,33 @@ namespace CalculatorProj_Perez
             string result = "";
             char[] carr = { '+', '-', '*', '/' };
             int resn = label.IndexOfAny(carr);
-            char c1 = label[resn];
+            char c1 = ' ';
+            int index = 0;
             string value1 = "";
+            string lbl = "";
             if (!label.Contains("="))
             {
-                for (int i = 0; i < resn - 1; i++)
+                if (label[0] == '-')
                 {
-                    value1 += label[i];
+                    for (int i = 1; i < label.Length; i++)
+                    {
+                        lbl += label[i];
+                    }
+                    index = lbl.IndexOfAny(carr);
+                    c1 = label[index + 1];
+                    for (int i = 0; i < index; i++)
+                    {
+                        value1 += label[i];
+                    }
+                }
+                else
+                {
+                    c1 = label[resn];
+                    value1 = "";
+                    for (int i = 0; i < resn - 1; i++)
+                    {
+                        value1 += label[i];
+                    }
                 }
             }
             else
@@ -33,30 +55,29 @@ namespace CalculatorProj_Perez
                 int len = label.IndexOf('=');
                 value1 = txtbox;
                 txtbox = "";
-                string lbl = "";
+                lbl = "";
                 if (label[0] == '-')
                 {
                     for (int i = 1; i < label.Length; i++)
                     {
                         lbl += label[i];
                     }
-                    resn = lbl.IndexOfAny(carr);
-                    for (int i = resn + 1; i < len - 1; i++)
+                    index = lbl.IndexOfAny(carr);
+                    c1 = label[index + 1];
+                    for (int i = index + 1; i < len - 1; i++)
                     {
                         txtbox += lbl[i];
                     }
                 }
                 else
                 {
+                    c1 = label[resn];
                     for (int i = resn + 1; i < len - 1; i++)
                     {
                         txtbox += label[i];
                     }
                 }
-                
-                MessageBox.Show(value1 + " the txt" + txtbox);
             }
-            
             double val1 = Convert.ToDouble(value1);
             double val2 = Convert.ToDouble(txtbox);
             double res = 0;
