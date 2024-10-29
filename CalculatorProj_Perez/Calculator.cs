@@ -146,14 +146,7 @@ namespace CalculatorProj_Perez
 
         private void Calculator_MouseClick(object sender, MouseEventArgs e)
         {
-            if (label2.Visible)
-            {
                 label2.Visible = false;
-            }
-            else
-            {
-                label2.Visible = true;
-            }
         }
 
         
