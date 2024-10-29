@@ -185,7 +185,8 @@ namespace CalculatorProj_Perez
                      e.KeyChar != '/' &&
                      e.KeyChar != '.' &&
                      e.KeyChar != (char)Keys.Enter &&
-                     e.KeyChar != '=')
+                     e.KeyChar != '=' &&
+                     e.KeyChar != (char)Keys.Back)
                 {
                     e.Handled = true;
                 }
@@ -248,7 +249,7 @@ namespace CalculatorProj_Perez
                                 word = "ok";
                                 txtbox = "0" + e.KeyChar.ToString();
                                 keys.Clear();
-                                keys.AddRange(new List<string> { "", txtbox, word, "", word1});
+                                keys.AddRange(new List<string> { "", txtbox, word, "", word1 });
                                 return keys;
                             }
                             else
@@ -292,7 +293,7 @@ namespace CalculatorProj_Perez
                             keys.AddRange(new List<string> { lbl2, txtbox, word, lbl2, word1 });
                             return keys;
                         }
-                       
+
                     }
                     else if (e.KeyChar == (char)Keys.Enter)
                     {
@@ -324,6 +325,51 @@ namespace CalculatorProj_Perez
                             keys.Clear();
                             keys.AddRange(new List<string> { lbl2, txtbox, word, lbl2, word1 });
                             return keys;
+                        }
+                    }
+                    else if (e.KeyChar == (char)Keys.Back)
+                    {
+                        e.Handled = true;
+                        string value1 = "";
+                        string val = "";
+                        if (txtbox.Length == 1)
+                        {
+                            word = "";
+                            word1 = "";
+                            value1 = "0";
+                            keys.Clear();
+                            keys.AddRange(new List<string> { "", value1, "", "", "" });
+                            return keys;
+                        }
+                        else
+                        {
+                            int index = txtbox.Length -1;
+                            val = txtbox.Remove(txtbox.Length - 1);
+                            value1 = val;
+                            if (txtbox.Contains('.'))
+                            {
+                                if (txtbox[index] == '.')
+                                {
+                                    
+                                    keys.Clear();
+                                    keys.AddRange(new List<string> { "", value1, "ok", "", "" });
+                                    return keys;
+                                }
+                                else
+                                {
+                                    keys.Clear();
+                                    keys.AddRange(new List<string> { "", value1, "ok", "", "ok" });
+                                    return keys;
+                                }
+                            }
+                            else
+                            {
+                                keys.Clear();
+                                keys.AddRange(new List<string> { "", value1, "ok", "", "" });
+                                return keys;
+                            }
+                            
+                            
                         }
                     }
                     else
@@ -399,7 +445,7 @@ namespace CalculatorProj_Perez
                                 keys.Clear();
                                 keys.AddRange(new List<string> { "", txtbox, word, "", word1 });
                                 return keys;
-                            }else
+                            } else
                             {
                                 word = "ok";
                                 txtbox += c;
@@ -415,7 +461,7 @@ namespace CalculatorProj_Perez
                         {
                             word = "ok";
                             txtbox = c;
-                            keys.Clear();;
+                            keys.Clear(); ;
                             keys.AddRange(new List<string> { "", txtbox, word, "", word1 });
                             return keys;
                         }
@@ -431,7 +477,7 @@ namespace CalculatorProj_Perez
                 }
                 else if (c == ".")
                 {
-                    if (txtbox != ""  && word1 == "")
+                    if (txtbox != "" && word1 == "")
                     {
                         word1 = "ok";
                         if (word == "")
@@ -445,7 +491,7 @@ namespace CalculatorProj_Perez
                         else
                         {
                             word = "ok";
-                            txtbox +=  c;
+                            txtbox += c;
                             keys.Clear();
                             keys.AddRange(new List<string> { "", txtbox, word, "", word1 });
                             return keys;
@@ -482,7 +528,50 @@ namespace CalculatorProj_Perez
                         keys.AddRange(new List<string> { lbl2, txtbox, word, lbl2, word1 });
                         return keys;
                     }
-                }
+                } else if (c == "C")
+                {
+                    string value1 = "";
+                    string val = "";
+                    if (txtbox.Length == 1)
+                    {
+                        word = "";
+                        word1 = "";
+                        value1 = "0";
+                        keys.Clear();
+                        keys.AddRange(new List<string> { "", value1, "", "", "" });
+                        return keys;
+                    }
+                    else
+                    {
+                        int index = txtbox.Length - 1;
+                        val = txtbox.Remove(txtbox.Length - 1);
+                        value1 = val;
+                        if (txtbox.Contains('.'))
+                        {
+                            if (txtbox[index] == '.')
+                            {
+
+                                keys.Clear();
+                                keys.AddRange(new List<string> { "", value1, "ok", "", "" });
+                                return keys;
+                            }
+                            else
+                            {
+                                keys.Clear();
+                                keys.AddRange(new List<string> { "", value1, "ok", "", "ok" });
+                                return keys;
+                            }
+                        }
+                        else
+                        {
+                            keys.Clear();
+                            keys.AddRange(new List<string> { "", value1, "ok", "", "" });
+                            return keys;
+                        }
+
+
+                    }
+                } 
                 else
                 {
                     word1 = "";

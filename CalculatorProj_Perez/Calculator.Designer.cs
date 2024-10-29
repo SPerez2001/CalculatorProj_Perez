@@ -381,13 +381,13 @@
             // 
             // lnklblhis
             // 
-            lnklblhis.ActiveLinkColor = Color.FromArgb(2, 76, 170);
+            lnklblhis.ActiveLinkColor = Color.Black;
             lnklblhis.AutoSize = true;
             lnklblhis.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lnklblhis.ForeColor = Color.FromArgb(196, 12, 12);
+            lnklblhis.ForeColor = Color.FromArgb(2, 76, 170);
             lnklblhis.ImageKey = "(none)";
             lnklblhis.LinkBehavior = LinkBehavior.NeverUnderline;
-            lnklblhis.LinkColor = Color.Black;
+            lnklblhis.LinkColor = Color.FromArgb(2, 76, 170);
             lnklblhis.Location = new Point(253, 9);
             lnklblhis.Name = "lnklblhis";
             lnklblhis.Size = new Size(66, 21);

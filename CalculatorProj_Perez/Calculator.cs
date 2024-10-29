@@ -29,6 +29,7 @@ namespace CalculatorProj_Perez
             rbtndiv.Click += RoundedButton_Click;
             rbtndot.Click += RoundedButton_Click;
             rbtneq.Click += RoundedButton_Click;
+            rbtnex.Click += RoundedButton_Click;
         }
 
         public void RoundedButton_Click(object sender, EventArgs e)
@@ -124,19 +125,6 @@ namespace CalculatorProj_Perez
 
         private void rbtnex_Click(object sender, EventArgs e)
         {
-            string value = label1.Text;
-            string value1 = textBox1.Text;
-            if (value1.Length == 1)
-            {
-                word = "";
-                word1 = "";
-                textBox1.Text = "0";
-            }
-            else
-            {
-                string val = value1.Remove(value1.Length - 1);
-                textBox1.Text = val;
-            }
         }
 
         private void lnklblhis_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
