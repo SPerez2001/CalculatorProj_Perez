@@ -61,7 +61,7 @@
             rbtn1.FlatAppearance.BorderSize = 0;
             rbtn1.FlatStyle = FlatStyle.Flat;
             rbtn1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn1.Location = new Point(23, 309);
+            rbtn1.Location = new Point(23, 303);
             rbtn1.Name = "rbtn1";
             rbtn1.Size = new Size(67, 51);
             rbtn1.TabIndex = 0;
@@ -77,7 +77,7 @@
             rbtn2.FlatAppearance.BorderSize = 0;
             rbtn2.FlatStyle = FlatStyle.Flat;
             rbtn2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn2.Location = new Point(96, 309);
+            rbtn2.Location = new Point(96, 303);
             rbtn2.Name = "rbtn2";
             rbtn2.Size = new Size(67, 51);
             rbtn2.TabIndex = 1;
@@ -93,7 +93,7 @@
             rbtn3.FlatAppearance.BorderSize = 0;
             rbtn3.FlatStyle = FlatStyle.Flat;
             rbtn3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn3.Location = new Point(169, 309);
+            rbtn3.Location = new Point(169, 303);
             rbtn3.Name = "rbtn3";
             rbtn3.Size = new Size(67, 51);
             rbtn3.TabIndex = 2;
@@ -109,7 +109,7 @@
             rbtn6.FlatAppearance.BorderSize = 0;
             rbtn6.FlatStyle = FlatStyle.Flat;
             rbtn6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn6.Location = new Point(169, 252);
+            rbtn6.Location = new Point(169, 246);
             rbtn6.Name = "rbtn6";
             rbtn6.Size = new Size(67, 51);
             rbtn6.TabIndex = 5;
@@ -125,7 +125,7 @@
             rbtn5.FlatAppearance.BorderSize = 0;
             rbtn5.FlatStyle = FlatStyle.Flat;
             rbtn5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn5.Location = new Point(96, 252);
+            rbtn5.Location = new Point(96, 246);
             rbtn5.Name = "rbtn5";
             rbtn5.Size = new Size(67, 51);
             rbtn5.TabIndex = 5;
@@ -141,7 +141,7 @@
             rbtn4.FlatAppearance.BorderSize = 0;
             rbtn4.FlatStyle = FlatStyle.Flat;
             rbtn4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn4.Location = new Point(23, 252);
+            rbtn4.Location = new Point(23, 246);
             rbtn4.Name = "rbtn4";
             rbtn4.Size = new Size(67, 51);
             rbtn4.TabIndex = 3;
@@ -157,7 +157,7 @@
             rbtn9.FlatAppearance.BorderSize = 0;
             rbtn9.FlatStyle = FlatStyle.Flat;
             rbtn9.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn9.Location = new Point(169, 195);
+            rbtn9.Location = new Point(169, 189);
             rbtn9.Name = "rbtn9";
             rbtn9.Size = new Size(67, 51);
             rbtn9.TabIndex = 8;
@@ -173,7 +173,7 @@
             rbtn8.FlatAppearance.BorderSize = 0;
             rbtn8.FlatStyle = FlatStyle.Flat;
             rbtn8.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn8.Location = new Point(96, 195);
+            rbtn8.Location = new Point(96, 189);
             rbtn8.Name = "rbtn8";
             rbtn8.Size = new Size(67, 51);
             rbtn8.TabIndex = 7;
@@ -189,7 +189,7 @@
             rbtn7.FlatAppearance.BorderSize = 0;
             rbtn7.FlatStyle = FlatStyle.Flat;
             rbtn7.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn7.Location = new Point(23, 195);
+            rbtn7.Location = new Point(23, 189);
             rbtn7.Name = "rbtn7";
             rbtn7.Size = new Size(67, 51);
             rbtn7.TabIndex = 6;
@@ -205,7 +205,7 @@
             rbtnclear.FlatAppearance.BorderSize = 0;
             rbtnclear.FlatStyle = FlatStyle.Flat;
             rbtnclear.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtnclear.Location = new Point(23, 138);
+            rbtnclear.Location = new Point(23, 132);
             rbtnclear.Name = "rbtnclear";
             rbtnclear.Size = new Size(140, 51);
             rbtnclear.TabIndex = 9;
@@ -222,7 +222,7 @@
             rbtnex.FlatAppearance.BorderSize = 0;
             rbtnex.FlatStyle = FlatStyle.Flat;
             rbtnex.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtnex.Location = new Point(169, 138);
+            rbtnex.Location = new Point(169, 132);
             rbtnex.Name = "rbtnex";
             rbtnex.Size = new Size(67, 51);
             rbtnex.TabIndex = 10;
@@ -239,7 +239,7 @@
             rbtndiv.FlatAppearance.BorderSize = 0;
             rbtndiv.FlatStyle = FlatStyle.Flat;
             rbtndiv.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            rbtndiv.Location = new Point(242, 138);
+            rbtndiv.Location = new Point(242, 132);
             rbtndiv.Name = "rbtndiv";
             rbtndiv.Size = new Size(67, 51);
             rbtndiv.TabIndex = 14;
@@ -255,7 +255,7 @@
             rbtnmul.FlatAppearance.BorderSize = 0;
             rbtnmul.FlatStyle = FlatStyle.Flat;
             rbtnmul.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            rbtnmul.Location = new Point(242, 195);
+            rbtnmul.Location = new Point(242, 189);
             rbtnmul.Name = "rbtnmul";
             rbtnmul.Size = new Size(67, 51);
             rbtnmul.TabIndex = 13;
@@ -271,7 +271,7 @@
             rbtnmin.FlatAppearance.BorderSize = 0;
             rbtnmin.FlatStyle = FlatStyle.Flat;
             rbtnmin.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            rbtnmin.Location = new Point(242, 252);
+            rbtnmin.Location = new Point(242, 246);
             rbtnmin.Name = "rbtnmin";
             rbtnmin.Size = new Size(67, 51);
             rbtnmin.TabIndex = 12;
@@ -287,7 +287,7 @@
             rbtnplus.FlatAppearance.BorderSize = 0;
             rbtnplus.FlatStyle = FlatStyle.Flat;
             rbtnplus.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold);
-            rbtnplus.Location = new Point(242, 309);
+            rbtnplus.Location = new Point(242, 303);
             rbtnplus.Name = "rbtnplus";
             rbtnplus.Size = new Size(67, 51);
             rbtnplus.TabIndex = 11;
@@ -304,7 +304,7 @@
             rbtneq.FlatStyle = FlatStyle.Flat;
             rbtneq.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
             rbtneq.ForeColor = SystemColors.ControlLightLight;
-            rbtneq.Location = new Point(169, 366);
+            rbtneq.Location = new Point(169, 360);
             rbtneq.Name = "rbtneq";
             rbtneq.Size = new Size(140, 51);
             rbtneq.TabIndex = 17;
@@ -321,7 +321,7 @@
             rbtndot.FlatAppearance.BorderSize = 0;
             rbtndot.FlatStyle = FlatStyle.Flat;
             rbtndot.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtndot.Location = new Point(96, 366);
+            rbtndot.Location = new Point(96, 360);
             rbtndot.Name = "rbtndot";
             rbtndot.Size = new Size(67, 51);
             rbtndot.TabIndex = 16;
@@ -338,7 +338,7 @@
             rbtn0.FlatAppearance.BorderSize = 0;
             rbtn0.FlatStyle = FlatStyle.Flat;
             rbtn0.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold);
-            rbtn0.Location = new Point(23, 366);
+            rbtn0.Location = new Point(23, 360);
             rbtn0.Name = "rbtn0";
             rbtn0.Size = new Size(67, 51);
             rbtn0.TabIndex = 15;
@@ -372,7 +372,7 @@
             // 
             label2.BackColor = Color.WhiteSmoke;
             label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(23, 195);
+            label2.Location = new Point(23, 189);
             label2.Name = "label2";
             label2.Size = new Size(286, 251);
             label2.TabIndex = 22;
